@@ -2,7 +2,10 @@
     "name": "Language Origination",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "storyboard": "*",
+        "arcade-sprite-data": "github:microsoft/arcade-sprite-data#v0.1.0",
+        "Sprite Grid": "github:microsoft/arcade-grid#v1.3.0"
     },
     "files": [
         "main.blocks",
@@ -22,5 +25,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
