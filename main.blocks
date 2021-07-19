@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="/d!(L0$Xtu[rPWGt@=|0">Player</variable><variable type="KIND_SpriteKind" id="nccka01Ba=1ky1!VzJ69">Projectile</variable><variable type="KIND_SpriteKind" id="3~K?X}@xp3eBC@#Q8=A1">Food</variable><variable type="KIND_SpriteKind" id="dmAtlMR_diM4#+:8p;UW">Enemy</variable><variable type="KIND_SpriteKind" id="aGfbg]e(8iCU0L1i,p]h">Entity</variable><variable id="@BYuxOxdwTnx=THO9./7">mySprite</variable><variable id="0qUJw;!!md7Mac0`_DwX">entities</variable></variables><block type="pxt-on-start" id="PnLNC%FA3CjyR3Of-p$A" x="0" y="0"><statement name="HANDLER"><block type="gameSplash" id="klkrwGko]QZ1Sqh(g,h_"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="title"><shadow type="text" id="U(3_98fiE!rcYLV5$n~T"><field name="TEXT">asdasd</field></shadow></value><value name="subtitle"><shadow type="text" id="+C0G1MP$MzSavCIqansq"><field name="TEXT"/></shadow></value><next><block type="mapplaceonrandomtile" id="N!K:_*DbXZ7rYd+eFLt^"><value name="sprite"><block type="variables_get" id="_Eau0:#3SmU)R2p@y4T)"><field name="VAR" id="0qUJw;!!md7Mac0`_DwX">entities</field></block></value><value name="tile"><shadow type="tileset_tile_picker" id="hrAF8gqC_:@SuScx5jQg"><field name="tile">assets.tile`transparency16`</field></shadow></value></block></next></block></statement></block><block type="allOfKind" id="F#)bY?2ftmN/%T,O,|gb" disabled="true" x="423" y="153"><value name="kind"><shadow type="spritekind" id="Oj!X9D5IX_)BfL7T[Qcx" disabled="true"><field name="MEMBER">Entity</field></shadow></value></block><block type="mapgettilestype" id="UzVs_p{6zM%(rm!2oNR?" disabled="true" x="590" y="210"><value name="tile"><shadow type="tileset_tile_picker" id="e4aP0;xH~(hvMUspWC=7" disabled="true"><field name="tile">assets.tile`transparency16`</field></shadow></value></block><block type="spritescreatenoset" id="_u245AY7@?cTcm-11w:j" disabled="true" x="70" y="370"><value name="img"><shadow type="screen_image_picker" id="e^jM8gK(C~cD7nJMiwmi" disabled="true"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"e^jM8gK(C~cD7nJMiwmi"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="#_P$f:3!yBrR6bCyg]|j" disabled="true"><field name="MEMBER">Entity</field></shadow></value></block></xml>
