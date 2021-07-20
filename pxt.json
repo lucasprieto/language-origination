@@ -3,7 +3,6 @@
     "description": "",
     "dependencies": {
         "device": "*",
-        "storyboard": "*",
         "arcade-sprite-data": "github:microsoft/arcade-sprite-data#v0.1.0",
         "Sprite Grid": "github:microsoft/arcade-grid#v1.3.0"
     },
@@ -13,7 +12,8 @@
         "README.md",
         "assets.json",
         "tilemap.g.jres",
-        "tilemap.g.ts"
+        "tilemap.g.ts",
+        "custom.ts"
     ],
     "testFiles": [
         "test.ts"
@@ -25,5 +25,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }

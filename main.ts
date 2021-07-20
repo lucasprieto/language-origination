@@ -1,20 +1,44 @@
 namespace SpriteKind {
     export const Entity = SpriteKind.create()
+    export const FoodSource = SpriteKind.create()
 }
 sprites.onCreated(SpriteKind.Entity, function (sprite) {
-    initEntity(sprite)
-    while (true) {
+    entityInit(sprite)
+    while (entityAlive(sprite)) {
     	
     }
+    sprite.destroy()
 })
-function isAlive (sprite: Sprite) {
-    return sprites.readDataNumber(sprite, "health") > 0
-}
-function initEntity (sprite: Sprite) {
-    sprites.setDataNumber(sprite, "maxHealth", 100)
-    sprites.setDataNumber(sprite, "health", 100)
-    sprites.setDataNumber(sprite, "age", 0)
-}
-function doEntityStep (sprite: Sprite) {
+function entityAction (sprite: Sprite) {
 	
 }
+function entityInit (sprite: Sprite) {
+    sprites.setDataNumber(sprite, "health", 100)
+    sprites.setDataNumber(sprite, "ticks", 0)
+}
+function entitySense (sprite: Sprite) {
+    sprites.changeDataNumberBy(sprite, "ticks", 1)
+}
+sprites.onCreated(SpriteKind.FoodSource, function (sprite) {
+    sprites.setDataNumber(sprite, "food", 1000)
+})
+function entityAge (sprite: Sprite) {
+    sprites.changeDataNumberBy(sprite, "health", 0 - ageDamage)
+}
+sprites.onDestroyed(SpriteKind.Entity, function (sprite) {
+    if (sprites.allOfKind(SpriteKind.Entity).length == 0) {
+        game.over(true)
+    }
+})
+function entityAlive (sprite: Sprite) {
+    return sprites.readDataNumber(sprite, "health") > 0
+}
+let ageDamage = 0
+ageDamage = 1
+let willToLive = 1
+let population = 5
+game.onUpdateInterval(1000, function () {
+    for (let value of sprites.allOfKind(SpriteKind.Entity)) {
+        entityAge(value)
+    }
+})
